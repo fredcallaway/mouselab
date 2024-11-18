@@ -1,0 +1,5 @@
+#!/bin/bash
+
+bin/fetch_data.py $1
+bin/process_data.py $1
+rsync -av data/processed/  ~/Projects/strategy-discovery/data/processed/
